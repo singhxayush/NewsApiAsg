@@ -1,0 +1,22 @@
+/* src/components/ArticlesList.css */
+.articles-list {
+    height: 100vh;
+    overflow-y: scroll; /* Use custom scrollbar styling */
+    scroll-behavior: smooth;
+    padding-right: 15px; /* Adjust this if needed to ensure no content is hidden */
+  }
+  
+  /* Custom scrollbar styles */
+  .articles-list::-webkit-scrollbar {
+    width: 8px; /* Adjust width as needed */
+  }
+  
+  .articles-list::-webkit-scrollbar-thumb {
+    background-color: #888; /* Scrollbar color */
+    border-radius: 10px;
+  }
+  
+  .articles-list::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Scrollbar color on hover */
+  }
+  
