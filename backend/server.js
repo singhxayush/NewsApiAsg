@@ -20,7 +20,7 @@ const app = express();
 
 // CORS configuration
 const corsOptions = {
-  origin: ["https://news-api-asg.vercel.app"], // Replace with your actual frontend URL
+  origin: ["https://news-api-asg.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };

@@ -29,7 +29,7 @@ const ArticlesList = () => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await axios.get("https://backend-mauve-seven.vercel.app/fetch");
+        const response = await axios.get("https://backend-mauve-seven.vercel.app/api/fetch");
         setArticles(response.data);
       } catch (error) {
         console.error("Error fetching articles:", error);
