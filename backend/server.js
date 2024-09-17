@@ -15,7 +15,15 @@ const articleRoutes = require('./articleRoutes');
 
 const app = express();
 
-app.use(cors());
+// CORS configuration
+const corsOptions = {
+  origin: ['https://your-frontend-url.vercel.app'], // Replace with your actual frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+};
+
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
 // Connect to MongoDB
