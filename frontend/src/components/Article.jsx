@@ -43,7 +43,7 @@ const Article = ({ article }) => {
     if (hasVoted && votedType === type) return;
 
     try {
-      const response = await axios.post("https://backend-delta-two-76.vercel.app/api/vote", {
+      const response = await axios.post("https://backend-mauve-seven.vercel.app/api/vote", {
         articleId: article._id,
         voteType: type,
       });
