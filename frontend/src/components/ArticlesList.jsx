@@ -29,7 +29,7 @@ const ArticlesList = () => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/fetch`);
+        const response = await axios.get("https://backend-delta-two-76.vercel.app/api/fetch");
         setArticles(response.data);
       } catch (error) {
         console.error("Error fetching articles:", error);
