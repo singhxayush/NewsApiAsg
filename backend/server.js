@@ -20,7 +20,7 @@ const app = express();
 
 // CORS configuration
 const corsOptions = {
-  origin: ["https://news-api-asg.vercel.app/"], // Replace with your actual frontend URL
+  origin: ["https://news-api-asg.vercel.app"], // Replace with your actual frontend URL
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
@@ -35,6 +35,8 @@ mongoose
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("Failed to connect to MongoDB", err));
 
+
+app.get("/", (req, res) => res.send("Express on Vercel"));
 app.use("/", articleRoutes);
 
 // For local development
